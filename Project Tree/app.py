@@ -5,8 +5,8 @@ from ecommerce import EcommerceCatalog
 
 st.set_page_config(layout="wide", page_title="E-Commerce Catalog", page_icon="🛒")
 st.title("🛒 E-Commerce Catalog Manager")
-st.caption("Struktur Data: General Tree | UAS Struktur Data (INF62305)")
-st.markdown("**Manajemen katalog e-commerce dengan hierarki kategori**")
+st.caption("Implementation of General Tree Data Structure")
+st.markdown("**Sistem manajemen inventaris untuk kategori produk bertingkat secara dinamis**")
 
 # Inisialisasi
 if 'catalog' not in st.session_state:
@@ -121,4 +121,4 @@ with tab4:
     st.graphviz_chart(dot, use_container_width=True)
 
 st.divider()
-st.caption("General Tree Implementation | UAS Struktur Data")
+st.caption("General Tree Implementation")

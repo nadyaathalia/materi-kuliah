@@ -1,6 +1,6 @@
 # logic.py
 
-class TreeNode:
+class TreeNode: #cetakan untuk membuat node.
     def __init__(self, name, node_type="Kategori", data=None):
         self.name = name
         self.node_type = node_type  # Root, Kategori, Produk
