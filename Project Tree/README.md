@@ -82,7 +82,6 @@ Kelas utama yang menyimpan root dan menyediakan operasi-operasi dasar:
 
 ---
 
-
 ## 🚀 Cara Menjalankan
 
 ### 1. Prasyarat
@@ -146,7 +145,7 @@ Kami menerapkan alur kerja Fork & Pull Request Workflow untuk memastikan setiap 
 
 ### 3. Buat Branch Baru yang spesifik untuk fitur atau perbaikan yang akan Anda kerjakan agar tidak mengganggu branch utama (main):
 
-```bash
+```Bash
 git checkout -b fitur-baru-anda
 ```
 
@@ -159,7 +158,7 @@ git commit -m "feat: menambahkan validasi dinamis input produk pada app.py"
 
 ### Push Branch tersebut ke repositori fork di akun GitHub Anda:
 
-```bash
+```Bash
 git push origin fitur-baru-anda
 ```
 
@@ -222,62 +221,6 @@ Data tree disimpan dalam `st.session_state` Streamlit agar tidak hilang saat pen
 if 'catalog' not in st.session_state:
     st.session_state.catalog = EcommerceCatalog("TokoPusat")
 ```
-
----
-
-## 🛠️ Cara Mengkloningkan Repository
-
-Untuk mulai menggunakan proyek ini di mesin lokal Anda, silakan ikuti langkah-langkah di bawah ini:
-
-### Prasyarat
-
-Pastikan Anda sudah menginstal **Git** di sistem Anda. Anda bisa mengeceknya dengan menjalankan perintah ini di terminal:
-
-```bash
-git --version
-
-```
-
-### Langkah-langkah Clone
-
-1. **Buka Terminal** (atau Command Prompt/Git Bash) di direktori tempat Anda ingin menyimpan proyek ini.
-2. **Jalankan perintah berikut** untuk mengunduh repositori:
-```bash
-git clone https://github.com/kalhsan/e-commerce.git
-
-```
-
-
-*(Ganti URL di atas dengan URL repositori yang sesuai)*.
-3. **Masuk ke folder proyek:**
-```bash
-cd e-commerce
-
-```
-
-
-4. **Instal dependensi** (jika diperlukan):
-```bash
-# Sesuaikan dengan package manager yang Anda gunakan (misalnya: npm, pip, dll)
-npm install 
-
-```
----
-## Contributing (dipersilahkan jika ada ide kreatif dari kalian)
-Kami sangat menyambut kontribusi dari komunitas! Berikut cara untuk mulai berkontribusi:
-
-1.Fork repositori ini.
-
-2.Buat branch baru untuk fitur Anda: git checkout -b fitur-keren.
-
-3.Lakukan perubahan pada kode Anda.
-
-4.Pastikan semua tes berjalan lancar dengan menjalankan npm test.
-
-5.Kirimkan Pull Request ke branch utama kami.
-
-Terima kasih telah membantu proyek ini menjadi lebih baik!
-
 
 ---
 
